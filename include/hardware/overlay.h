@@ -51,6 +51,12 @@ enum {
                                         // by the overlay
 };
 
+/* Legacy formats added to fix build breaks */
+enum {
+    OVERLAY_FORMAT_YCbCr_422_SP = HAL_PIXEL_FORMAT_YCbCr_422_SP,
+    OVERLAY_FORMAT_YCbCr_420_SP = HAL_PIXEL_FORMAT_YCbCr_420_SP
+};
+
 /* values for copybit_set_parameter(OVERLAY_TRANSFORM) */
 enum {
     /* flip source image horizontally */
