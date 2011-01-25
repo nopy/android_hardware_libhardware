@@ -47,8 +47,10 @@ enum {
     OVERLAY_FORMAT_BGRA_8888    = HAL_PIXEL_FORMAT_BGRA_8888,
     OVERLAY_FORMAT_YCbYCr_422_I = 0x14,
     OVERLAY_FORMAT_CbYCrY_422_I = 0x16,
-    OVERLAY_FORMAT_DEFAULT      = 99    // The actual color format is determined
+    OVERLAY_FORMAT_DEFAULT      = 99,    // The actual color format is determined
                                         // by the overlay
+    OVERLAY_FORMAT_DEFAULT_DUAL_PRIMARY = 100,   // For dual-overlay usecase
+    OVERLAY_FORMAT_DEFAULT_DUAL_SECONDARY = 101 // For dual-overlay usecase
 };
 
 /* Legacy formats added to fix build breaks */
